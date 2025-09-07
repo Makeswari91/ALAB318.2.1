@@ -12,14 +12,6 @@ const PORT = 3000;
 app.use(logReq);
 // Routes
 app.use('/', baseroute);
-app.get("/home", (req,res)=>{
-    let option={
-        title: "Mahi",
-        content: "sdvs wfewf ef qwf bdfbdb wdv wf wwf qwqqref r3f"
-    };
-    res.render("home", option);
-});
-
 //Global error handling
 app.use(globalErr);
 
